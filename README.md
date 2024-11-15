@@ -1,6 +1,17 @@
-# crab-project
+# Crab Starter Template
 
 This template should help get you started developing with Vue 3 in Vite.
+
+## Features
+
+- [Vite](https://cn.vitejs.dev/)
+- [Vue 3](https://cn.vuejs.org/)
+- [Pinia](https://pinia.vuejs.org/zh/)
+- [Vue Router](https://router.vuejs.org/zh/)
+- [UnoCSS](https://unocss.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [eslint](https://eslint.org/) & [prettier](https://prettier.io/)
+- [lint-staged](https://github.com/lint-staged/lint-staged) & [commitlint](https://commitlint.js.org/) with [husky](https://typicode.github.io/husky/zh/)
 
 ## Recommended IDE Setup
 
