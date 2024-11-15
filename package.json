@@ -11,7 +11,8 @@
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --fix",
     "format": "prettier --write src/",
-    "prepare": "husky"
+    "prepare": "husky",
+    "commitlint": "commitlint --edit"
   },
   "dependencies": {
     "pinia": "^2.2.4",
@@ -19,6 +20,8 @@
     "vue-router": "^4.4.5"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
     "@tsconfig/node20": "^20.1.4",
     "@types/node": "^20.17.0",
     "@vitejs/plugin-basic-ssl": "^1.1.0",
@@ -38,5 +41,11 @@
     "vite": "^5.4.10",
     "vite-plugin-vue-devtools": "^7.5.3",
     "vue-tsc": "^2.1.6"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,vue}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   }
 }
